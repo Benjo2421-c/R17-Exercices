@@ -11,8 +11,10 @@
 #-	Changez la valeur de son rayon
 #-	Imprimez à nouveau son rayon.
 #-	Supprimez le rayon de cet objet cercle
+#-	Essayez maintenant d'obtenir son rayon. Il devrait être 0
 
-#-	Essayez maintenant d'obtenir son rayon. Vous devriez avoir un message d'erreur
+#- supprimez l'attribut _rayon
+#- essayez d'obtenir la valeur de la propriété rayon (vous devriez obtenir un msg d'erreur)
 
 class Cercle:
     def __init__(self, rayon):
