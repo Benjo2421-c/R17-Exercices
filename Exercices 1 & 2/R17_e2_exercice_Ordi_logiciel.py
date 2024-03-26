@@ -30,10 +30,9 @@ class Ordinateur:
     
    
 class Poste_de_travail(Ordinateur):
-    
     def __init__(self,ID, adresseIP, utilisation,processeur=None, memoire_vive=None) -> None:
         super.__init__(ID, adresseIP)
-        self.logiciels = []
+        self.liste_logiciels = []
         pass
     
     # ajoute un str ou list de str à logiciels
