@@ -2,8 +2,9 @@ from os import chdir
 from os.path import dirname
 from csv import reader
 from .Terrain import Terrain
+from .Joueur import Joueur
 
-class Banque:
+class Banque(Joueur):
     _existe_deja = False    # Le '_' au début de la variable indique qu'il s'agit d'une variable privé.
     def __init__(self) -> None:
         if Banque._existe_deja == True :
@@ -21,7 +22,7 @@ class Banque:
             csv_reader = reader(f_lu)
             next(csv_reader)
             for l in csv_reader:
-                new_terrain = Terrain(l[0],l[1],l[2],"","","","")
+                new_terrain = Terrain(l[0],l[1],l[2],l[4],l[6],l[7:],)
                 self.terrains.append(new_terrain)
 
 
